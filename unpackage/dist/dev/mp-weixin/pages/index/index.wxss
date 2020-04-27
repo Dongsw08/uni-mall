@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.basic-button, .white-button, .red-button {
+  width: 160rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+  border: 1px solid #ff2150;
+  border-radius: 3px;
+}
+.white-button {
+  background-color: #fff;
+  color: #ff2150;
+}
+.red-button {
+  background-color: #ff2150;
+  color: #fff;
+}
+.youlike-card, .youlike .youlike-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.youlike-card .youlike-item {
+  border: 1px solid #eee;
+  padding: 16rpx;
+  width: 50%;
+  height: 540rpx;
+}
+.youlike-card .youlike-item .youlike-item-pic {
+  width: 100%;
+  height: 356rpx;
+  margin-bottom: 16rpx;
+}
+.youlike-card .youlike-item .youlike-item-title {
+  height: 72rpx;
+  margin-bottom: 16rpx;
+  overflow: hidden;
+}
+.youlike-card .youlike-item .youlike-item-price image {
+  float: right;
+  height: 32rpx;
+  width: 32rpx;
+}
+.youlike-card .youlike-item .youlike-item-price .price {
+  color: #ff2150;
+}
+.youlike-card .youlike-item .youlike-item-price .origin {
+  text-decoration: line-through;
+  color: #999999;
+  font-size: 24rpx;
+  margin-left: 32rpx;
+}
+.youlike-card .youlike-item:nth-child(n+1) {
+  border-left: none;
+}
+.youlike-card .youlike-item:nth-child(2n) {
+  border-right: none;
+}
+page {
+  background-color: #f7f7f7;
+}
+.mp-search-box {
+  position: absolute;
+  left: 0;
+  top: 30rpx;
+  z-index: 9999;
+  width: 100%;
+  padding: 0 80rpx;
+}
+.mp-search-box .ser-input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666666;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.swiper-container {
+  height: 400rpx;
+  background-color: #ffffff;
+}
+.swiper-container .carousel {
+  width: 100%;
+  height: 400rpx;
+}
+.swiper-container .carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.swiper-container .carousel image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cate-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  background-color: #ffffff;
+}
+.cate-container .cate-items {
+  max-width: 200rpx;
+  width: 25%;
+  text-align: center;
+  margin: 20rpx 0;
+}
+.cate-container .cate-items image {
+  height: 100rpx;
+  width: 100rpx;
+}
+.cate-container .cate-items .cate-title {
+  text-align: center;
+}
+.hot-info {
+  height: 104rpx;
+  padding: 20rpx;
+  background-color: #ffffff;
+  margin-bottom: 12rpx;
+}
+.hot-info .hot-info-left {
+  float: left;
+}
+.hot-info .hot-info-left image {
+  height: 64rpx;
+  width: 250rpx;
+}
+.hot-info .hot-message-swiper {
+  display: inline-block;
+  width: calc(100% - 250rpx);
+  height: 64rpx;
+}
+.hot-info .hot-message-swiper .hot-message-swiper-item {
+  line-height: 64rpx;
+}
+.flash-sale {
+  background-color: #ffffff;
+  margin-bottom: 24rpx;
+}
+.flash-sale .flash-sale-head {
+  height: 92rpx;
+  padding: 16rpx;
+  border-bottom: 1px solid #eee;
+}
+.flash-sale .flash-sale-head .flash-sale-head-title {
+  float: left;
+  line-height: 60rpx;
+}
+.flash-sale .flash-sale-head .flash-sale-head-title text {
+  color: #ff2150;
+}
+.flash-sale .flash-sale-head image {
+  float: right;
+  height: 48rpx;
+  width: 32rpx;
+  margin-top: 6rpx;
+}
+.flash-sale .flash-sale-head .flash-sale-right-button {
+  float: right;
+  min-width: 144rpx;
+  height: 52rpx;
+  text-align: center;
+  line-height: 52rpx;
+  color: #ff2150;
+  border: 1px solid #ff2150;
+  padding: 0 10rpx;
+  border-radius: 4px;
+}
+.flash-sale .flash-sale-items-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flash-sale .flash-sale-items-card .flash-sale-item {
+  height: 200rpx;
+  width: 25%;
+  border-right: 1px solid #eee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 16rpx 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.flash-sale .flash-sale-items-card .flash-sale-item image {
+  width: 80%;
+  height: 140rpx;
+}
+.flash-sale .flash-sale-items-card .flash-sale-item text {
+  font-size: 24rpx;
+  white-space: nowrap;
+}
+.flash-sale .flash-sale-items-card .flash-sale-item:last-child {
+  border: none;
+}
+.hot-market {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  background-color: #ffffff;
+  margin-bottom: 12rpx;
+}
+.hot-market image {
+  height: 224rpx;
+  -webkit-flex-basis: 25%;
+          flex-basis: 25%;
+  border-right: 1px solid #eee;
+}
+.hot-market image:nth-child(3n+1) {
+  -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+  width: 374rpx;
+}
+.hot-market image:nth-child(3n) {
+  border-right: none;
+}
+.hot-market image:nth-child(n+3) {
+  border-top: 1px solid #eee;
+}
+.hot-brands {
+  background-color: #ffffff;
+  margin-bottom: 12rpx;
+}
+.hot-brands .hot-brands-head {
+  height: 92rpx;
+  padding: 16rpx;
+  border-bottom: 1px solid #eee;
+}
+.hot-brands .hot-brands-head .hot-brands-head-title {
+  float: left;
+  line-height: 60rpx;
+}
+.hot-brands .hot-brands-head .hot-brands-head-title text:last-child {
+  font-size: 24rpx;
+  margin-left: 16rpx;
+}
+.hot-brands .hot-brands-head .hot-brands-head-title text:first-child {
+  color: #ff2150;
+}
+.hot-brands .hot-brands-head image {
+  float: right;
+  height: 48rpx;
+  width: 32rpx;
+  margin-top: 6rpx;
+}
+.hot-brands .hot-brands-head .hot-brands-right {
+  float: right;
+  line-height: 60rpx;
+}
+.hot-brands .hot-brands-item-card {
+  height: 320rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.hot-brands .hot-brands-item-card .hot-brands-item-big {
+  height: 320rpx;
+  width: 50%;
+  border-right: 1px soild #eee;
+}
+.hot-brands .hot-brands-item-card .hot-brands-item-right-container {
+  height: 320rpx;
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.hot-brands .hot-brands-item-card .hot-brands-item-right-container .hot-brands-right-item {
+  height: 50%;
+  width: 50%;
+  border-bottom: 1px solid #eee;
+}
+.hot-brands .hot-brands-item-card .hot-brands-item-right-container .hot-brands-right-item:nth-child(2n+1) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.hot-topic {
+  background-color: #ffffff;
+  margin-bottom: 12rpx;
+}
+.hot-topic .hot-topic-head {
+  height: 92rpx;
+  padding: 16rpx;
+  border-bottom: 1px solid #eee;
+}
+.hot-topic .hot-topic-head .hot-topic-head-title {
+  float: left;
+  line-height: 60rpx;
+}
+.hot-topic .hot-topic-head .hot-topic-head-title text:last-child {
+  font-size: 24rpx;
+  margin-left: 16rpx;
+}
+.hot-topic .hot-topic-head .hot-topic-head-title text:first-child {
+  color: #ff2150;
+}
+.hot-topic .hot-topic-head image {
+  float: right;
+  height: 48rpx;
+  width: 32rpx;
+  margin-top: 6rpx;
+}
+.hot-topic .hot-topic-head .hot-topic-right {
+  float: right;
+  line-height: 60rpx;
+}
+.hot-topic .hot-topic-item-card {
+  min-height: 320rpx;
+}
+.hot-topic .hot-topic-item-card .hot-topic-item-card-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.hot-topic .hot-topic-item-card .hot-topic-item-card-top .hot-topic-item-big {
+  height: 382rpx;
+  width: 50%;
+  border-right: 1px soild #eee;
+  border-bottom: 1px solid #eee;
+}
+.hot-topic .hot-topic-item-card .hot-topic-item-card-top .hot-topic-item-right-container {
+  height: 382rpx;
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.hot-topic .hot-topic-item-card .hot-topic-item-card-top .hot-topic-item-right-container .hot-topic-right-item {
+  height: 50%;
+  width: 50%;
+  border-bottom: 1px solid #eee;
+}
+.hot-topic .hot-topic-item-card .hot-topic-item-card-top .hot-topic-item-right-container .hot-topic-right-item:nth-child(2n+1) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.hot-topic .hot-topic-item-card .hot-topic-items-card-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+}
+.hot-topic .hot-topic-item-card .hot-topic-items-card-bottom .hot-topic-bottom-item {
+  height: 190rpx;
+  width: 25%;
+  border-right: 1px solid #eee;
+}
+.hot-topic .hot-topic-item-card .hot-topic-items-card-bottom .hot-topic-bottom-item:last-child {
+  border-right: none;
+}
+.youlike {
+  background-color: #ffffff;
+  margin-bottom: 12rpx;
+}
+.youlike .youlike-head {
+  height: 92rpx;
+  padding: 16rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.youlike .youlike-head image {
+  width: 32rpx;
+  height: 26rpx;
+}
+.youlike .youlike-head text {
+  font-size: 24rpx;
+  margin-left: 16rpx;
+}
+
